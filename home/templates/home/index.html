@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>abhishek</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+  <div class= container mt-5>
+        
+    <form class="col-6 mx-auto crad p-3 shadow-lg" method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <h2>Add informatation</h2>
+      <hr>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">name </label>
+        <input name="name" required type="Text" class="form-control">
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">age</label>
+        <input name="age" required type="Text" class="form-control">
+
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">email</label>
+        <input name="email" required type="Text" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" name="address" class="form-label">address </label>
+        <textarea class="form-control"name="address" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" name="image" class="form-label">image</label>
+        <input name="image"type="file" class="form-control">
+      </div>
+      
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    
+  </div>   
+    <!-- End Example Code -->
+  </body>
+</html>
